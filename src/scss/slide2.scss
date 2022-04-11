@@ -1,0 +1,153 @@
+@import 'mixin';
+
+.slide2 {
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    padding: 115px 0 15px;
+    @include text-style(40px, #ffffff);
+  }
+
+  &-description {
+    padding-bottom: 40px;
+    @include text-style(23px, #c0c0c0);
+  }
+
+  &-img {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 100px;
+
+    &-1 {
+      background: url('../img/slide2-1.jpg');
+      flex-basis: 576px;
+      &-title {
+        padding: 420px 0 0 30px;
+        @include text-style(14px, #ffffff);
+        text-transform: uppercase;
+      }
+      &-description {
+        width: 500px;
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        @include text-style(14px, #c0c0c0);
+      }
+      &-btn {
+        display: flex;
+        margin: 0 0 30px 30px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        background-color: #ffffff;
+        @include text-style(15px, #000000);
+        border-radius: 40px 40px 40px 40px;
+
+        &:hover {
+          color: red;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px red;
+        }
+      }
+    }
+    &-2 {
+      background: url('../img/slide2-2.jpg');
+      flex-basis: 576px;
+      &-title {
+        padding: 420px 0 0 30px;
+        @include text-style(14px, #ffffff);
+        text-transform: uppercase;
+      }
+      &-description {
+        width: 500px;
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        @include text-style(14px, #c0c0c0);
+      }
+      &-btn {
+        display: flex;
+        margin: 0 0 30px 30px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        background-color: #ffffff;
+        @include text-style(15px, #000000);
+        border-radius: 40px 40px 40px 40px;
+        &:hover {
+          color: red;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px red;
+        }
+      }
+    }
+    &-3 {
+      background: url('../img/slide2-3.jpg');
+      flex-basis: 576px;
+      &-title {
+        padding: 400px 0 0 30px;
+        @include text-style(14px, #ffffff);
+        text-transform: uppercase;
+      }
+      &-description {
+        width: 500px;
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        @include text-style(14px, #c0c0c0);
+      }
+      &-btn {
+        display: flex;
+        margin: 0 0 30px 30px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        background-color: #ffffff;
+        @include text-style(15px, #000000);
+        border-radius: 40px 40px 40px 40px;
+        &:hover {
+          color: red;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px red;
+        }
+      }
+    }
+    &-4 {
+      background: url('../img/slide2-4.jpg');
+      flex-basis: 576px;
+      &-title {
+        padding: 400px 0 0 30px;
+        @include text-style(14px, #ffffff);
+        text-transform: uppercase;
+      }
+      &-description {
+        width: 500px;
+        padding: 10px 0 10px 30px;
+        text-align: left;
+        @include text-style(14px, #c0c0c0);
+      }
+      &-btn {
+        display: flex;
+        margin: 0 0 30px 30px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        background-color: #ffffff;
+        @include text-style(15px, #000000);
+        border-radius: 40px 40px 40px 40px;
+        &:hover {
+          color: red;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px red;
+        }
+      }
+    }
+  }
+}
+
+.circle {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #000000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

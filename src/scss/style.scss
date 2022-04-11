@@ -1,0 +1,15 @@
+@import 'normalize';
+@import 'fonts';
+// body {
+//   background-color: #000000;
+// }
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+@import 'header';
+@import 'slide1';
+@import 'slide2';
+@import 'slide3';
+@import 'slide4';

@@ -1,0 +1,55 @@
+@import 'mixin';
+
+.slide3 {
+  background: url('../img/sunset.jpg');
+  &-title {
+    padding: 260px 0 0 1080px;
+    @include text-style(14px, #ffffff);
+    text-transform: uppercase;
+  }
+  &-description {
+    padding: 10px 0 200px 1080px;
+    @include text-style(14px, #c0c0c0);
+  }
+
+  &-sub {
+    text-align: right;
+    padding-bottom: 40px;
+    &-time {
+      margin-right: 30px;
+      &::after {
+        content: "1''";
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-circle {
+      margin-right: 40px;
+      &::after {
+        content: 'f/16';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-iso {
+      margin-right: 40px;
+      &::after {
+        content: '400';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-map {
+      margin-right: 90px;
+      &::after {
+        content: 'Japan';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+  }
+}

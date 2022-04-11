@@ -1,0 +1,38 @@
+@import 'mixin';
+
+.head {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-logo {
+    margin: 30px 0 30px 150px;
+  }
+  &-space {
+    @include text-style(13px, #ffffff);
+    margin-right: 55px;
+  }
+  &-link {
+    @include text-style(15px, #ffffff);
+    text-decoration: none;
+    margin: 0 30px 0 30px;
+    &:hover {
+      color: red;
+      text-shadow: 1px 1px 1px red;
+    }
+  }
+
+  &-button {
+    margin-right: 140px;
+    background: #ffffff;
+    padding: 10px 20px;
+    @include text-style(16px, #000000);
+    border: none;
+    border-radius: 14px;
+    &:hover {
+      color: red;
+      cursor: pointer;
+      text-shadow: 1px 1px 1px red;
+    }
+  }
+}

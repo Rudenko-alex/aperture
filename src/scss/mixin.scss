@@ -1,0 +1,7 @@
+@mixin text-style($size, $color) {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: $size;
+  font-weight: 400;
+  color: $color;
+}

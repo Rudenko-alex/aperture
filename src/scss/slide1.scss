@@ -1,0 +1,62 @@
+@import 'mixin';
+
+.slide1 {
+  background: url('../img/slide1.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-empl {
+    @include text-style(14px, #c0c0c0);
+    padding-top: 466px;
+    text-transform: uppercase;
+  }
+  &-title {
+    @include text-style(54px, #ffffff);
+  }
+  &-description {
+    padding: 20px 0 15px;
+    @include text-style(14px, #c0c0c0);
+    width: 580px;
+    text-align: center;
+  }
+  &-sub {
+    align-self: flex-end;
+    padding-bottom: 40px;
+    &-time {
+      margin-right: 70px;
+      &::after {
+        content: '1/2000s';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-circle {
+      margin-right: 40px;
+      &::after {
+        content: 'f/11';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-iso {
+      margin-right: 40px;
+      &::after {
+        content: '100';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-map {
+      margin-right: 90px;
+      &::after {
+        content: 'Iceland';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+  }
+}
