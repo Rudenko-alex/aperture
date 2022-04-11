@@ -6,6 +6,7 @@
     padding: 260px 0 0 1080px;
     @include text-style(14px, #ffffff);
     text-transform: uppercase;
+    letter-spacing: 2px;
   }
   &-description {
     padding: 10px 0 200px 1080px;
