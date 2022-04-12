@@ -1,0 +1,58 @@
+@import 'mixin';
+
+.slide7 {
+  background: url('../img/star.jpg');
+  &-title {
+    padding: 250px 0 0 1080px;
+    @include text-style(14px, #ffffff);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &-description {
+    padding: 10px 0 194px 1080px;
+    width: 240px;
+    @include text-style(14px, #c0c0c0);
+    line-height: 20px;
+  }
+
+  &-sub {
+    text-align: right;
+    padding-bottom: 40px;
+    &-time {
+      margin-right: 40px;
+      &::after {
+        content: "6''";
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-circle {
+      margin-right: 40px;
+      &::after {
+        content: 'f/11';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-iso {
+      margin-right: 40px;
+      &::after {
+        content: '800';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-map {
+      margin-right: 80px;
+      &::after {
+        content: 'Nepal';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+  }
+}
