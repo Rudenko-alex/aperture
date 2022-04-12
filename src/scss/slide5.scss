@@ -1,0 +1,56 @@
+@import 'mixin';
+
+.slide5 {
+  background: url('../img/monstera.jpg');
+  &-title {
+    padding: 260px 0 0 1080px;
+    @include text-style(14px, #ffffff);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &-description {
+    padding: 10px 0 200px 1080px;
+    @include text-style(14px, #c0c0c0);
+  }
+
+  &-sub {
+    text-align: right;
+    padding-bottom: 40px;
+    &-time {
+      margin-right: 60px;
+      &::after {
+        content: '1/400s';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-circle {
+      margin-right: 50px;
+      &::after {
+        content: 'f/3,5';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-iso {
+      margin-right: 50px;
+      &::after {
+        content: '100';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+    &-map {
+      margin-right: 100px;
+      &::after {
+        content: 'Costa Rica';
+        position: absolute;
+        margin-left: 5px;
+        @include text-style(12px, #ffffff);
+      }
+    }
+  }
+}
