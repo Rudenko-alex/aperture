@@ -1,7 +1,7 @@
 @import 'mixin';
 
 .slide3 {
-  background: url('../img/sunset.jpg');
+  background: url('@img/sunset.jpg');
   &-title {
     padding: 260px 0 0 1080px;
     @include text-style(14px, #ffffff);

@@ -24,7 +24,7 @@
     padding-bottom: 100px;
 
     &-1 {
-      background: url('../img/slide2-1.jpg');
+      background: url('@img/slide2-1.jpg');
       flex-basis: 576px;
       &-title {
         padding: 420px 0 0 30px;
@@ -54,7 +54,7 @@
       }
     }
     &-2 {
-      background: url('../img/slide2-2.jpg');
+      background: url('@img/slide2-2.jpg');
       flex-basis: 576px;
       &-title {
         padding: 420px 0 0 30px;
@@ -83,7 +83,7 @@
       }
     }
     &-3 {
-      background: url('../img/slide2-3.jpg');
+      background: url('@img/slide2-3.jpg');
       flex-basis: 576px;
       &-title {
         padding: 400px 0 0 30px;
@@ -112,7 +112,7 @@
       }
     }
     &-4 {
-      background: url('../img/slide2-4.jpg');
+      background: url('@img/slide2-4.jpg');
       flex-basis: 576px;
       &-title {
         padding: 400px 0 0 30px;

@@ -21,22 +21,23 @@ export const scss = () => {
           })
         )
       )
-      .pipe(app.plugins.replace(/@img\//g, '../img/'))
+      // .pipe(app.plugins.replace(/@img\//g, '../img/'))
       .pipe(
         sass({
           outputStyle: 'expanded',
         })
       )
+      .pipe(app.plugins.replace(/@img\//g, '../img/'))
       .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-      .pipe(
-        app.plugins.if(
-          app.isBuild,
-          webpcss({
-            webpClass: '.webp',
-            noWebpClass: '.no-webp',
-          })
-        )
-      )
+      // .pipe(
+      //   app.plugins.if(
+      //     app.isBuild,
+      //     webpcss({
+      //       webpClass: '.webp',
+      //       noWebpClass: '.no-webp',
+      //     })
+      //   )
+      // )
       .pipe(
         app.plugins.if(
           app.isBuild,
@@ -48,7 +49,7 @@ export const scss = () => {
         )
       )
       // Раскомментировать если нужен не сжатый дубль файла стилей
-      .pipe(app.gulp.dest(app.path.build.css))
+      // .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.if(app.isBuild, cleanCss()))
       .pipe(
         rename({
