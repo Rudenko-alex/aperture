@@ -1,0 +1,95 @@
+@import 'mixin';
+
+.footer {
+  background: #000000;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &-list {
+    width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    &-logo {
+      padding-bottom: 20px;
+    }
+    &-ul {
+      list-style: none;
+    }
+    &-left {
+      flex-grow: 1;
+
+      &-text {
+        @include text-style(13px, #c0c0c0);
+      }
+    }
+
+    &-title {
+      @include text-style(14px, #c0c0c0);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    &-txt {
+      @include text-style(14px, #ffffff);
+      margin: 10px 0 10px 0;
+    }
+
+    &-centr,
+    &-right {
+      flex-grow: 240px;
+    }
+  }
+}
+.subscribe {
+  width: 1168px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+
+  &-txt-t1 {
+    margin-bottom: 20px;
+    @include text-style(14px, #ffffff);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &-txt-t2 {
+    @include text-style(13px, #c0c0c0);
+  }
+
+  &-btn {
+    background: #ffffff;
+    width: 458px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 11px;
+    border-radius: 15px 15px 15px 15px;
+
+    &-cube {
+      display: inline-block;
+      background: #000000;
+      width: 63px;
+      padding-top: 30px;
+      margin-right: 6px;
+      text-align: right;
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+}
+.signature {
+  padding: 56px 0 104px;
+  width: 1168px;
+  display: flex;
+  justify-content: space-between;
+  &-txt {
+    @include text-style(14px, #c0c0c0);
+  }
+  &-img-logo {
+    margin-left: 20px;
+  }
+}
